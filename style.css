@@ -1,0 +1,76 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter&family=Lobster&family=Montserrat:ital@1&family=Poppins:wght@400;500&family=Ubuntu&display=swap');
+
+body{
+    font-family: 'Courgette', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* common style */
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+/* banner style */
+
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    grid-gap: 50px;
+    background-color: black;
+    padding: 50px 70px;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+.button{
+    text-decoration: none;
+    background-color:  #DD0000;
+    color: #FFFFFF;
+    padding: 16px 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* media quarise */
+
+/* mobile */
+@media only screen and (max-width: 688px) {
+    .banner-container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+/* tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .banner-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 20px 20px;
+        width: 80%;
+        height: 40%;
+    }
+    .banner-img img{
+        width: 100%;
+        border: 2px solid white;
+    }
+    .banner-paragraph{
+        width: 100%;
+        border: 2px solid white;
+    }
+}
