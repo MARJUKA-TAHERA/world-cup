@@ -28,12 +28,11 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-gap: 20px;
     background-color: black;
-    padding: 0px 80px;
     border-radius: 30px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: auto;
 }
@@ -62,6 +61,7 @@ p{
 .banner-img{
     display: flex;
     align-items: stretch;
+    padding-right: 10%;
 }
 .banner-img img{
     width: 100%;
@@ -70,17 +70,21 @@ p{
 }
 .banner-paragraph{
     padding: 10px;
+    padding-left: 10%;
 }
 /*----------- match style----------- */
 
 /* all match */
 .match-container{
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     grid-gap: 20px;
     width: 100%;
+    padding: 100px;
+    border: 2px solid black;
+    
+
 }
 /* match blog */
 .match-blog{
@@ -88,6 +92,7 @@ p{
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     justify-items: center;
+    overflow: hidden;
 
 }
 .match-blog-contant{
@@ -133,6 +138,7 @@ p{
 }
 .transfer-live-blog{
     padding: 10px;
+    border: 2px solid black;
 }
 .transfer-button{
     font-size: 16px;
@@ -140,6 +146,7 @@ p{
     padding: 5px 14px;
     color: #161616;
 }
+
 
 /* footer style */
 footer{
